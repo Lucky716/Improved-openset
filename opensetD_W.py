@@ -17,7 +17,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "5"
 
 # Training settings
 batch_size = 32
-epochs = 100
+epochs = 500
 lr = 0.001
 momentum = 0.9
 no_cuda =False
@@ -248,7 +248,7 @@ if __name__ == '__main__':
             outcome_part_init = outcome_part
         print('source: {} to target: {}  max accuracy{: .2f}% max average all accuracy{: .2f}%  max average part accuracy{: .2f}%\n'.format(
               source_name, target_name, correct ,outcome_all_init,outcome_part_init))
-    x = np.arange(0, 100, 1)
+    x = np.arange(0, 500, 1)
     x = list(x)
 
     fig = plt.figure()
